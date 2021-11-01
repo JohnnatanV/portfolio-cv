@@ -9,7 +9,7 @@
 
   /*------- Colors -------*/
   /* Change favorite color */
-  --hue-color: 58; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 10; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%); /*hsl(142, 69%, 61%)*/
@@ -106,7 +106,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--tittle-color);
+  color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 
@@ -128,18 +128,18 @@ img {
   padding: 2rem 0 4rem;
 }
 
-.section__tittle {
+.section__title {
   font-size: var(--h1-font);
 }
 
-.section__subtittle {
+.section__subtitle {
   display: block;
   font-size: var(--small-font);
   margin-bottom: var(--mb-3);
 }
 
-.section__tittle,
-.section__subtittle {
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
@@ -179,7 +179,7 @@ img {
 
 .nav__logo,
 .nav__toggle {
-  color: var(--tittle-color);
+  color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
@@ -291,11 +291,11 @@ img {
   grid-column: 1 / 3;
 }
 
-.home__tittle {
+.home__title {
   font-size: var(--big-font);
 }
 
-.home__subtittle {
+.home__subtitle {
   font-size: var(--h3-font);
   color: var(--text-color);
   font-weight: var(--font-medium);
@@ -360,3 +360,75 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
+/*==================== ABOUT ====================*/
+
+.about__img {
+  width: 11.9rem;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+  font-size: var(--h2-font);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/*==================== SKILLS ====================*/
+
+/*==================== QUALIFICATION ====================*/
+
+/*==================== SERVICES ====================*/
+
+/* Active Modal */
+
+/*==================== PORTFOLIO ====================*/
+
+/*==================== PROJECT IN MIND ====================*/
+
+/*==================== TESTIMONIAL ====================*/
+
+/*==================== CONTACT ME ====================*/
+
+/*==================== FOOTER ====================*/
+
+/*========== SCROLL UP ==========*/
+
+/* Show scroll */
+
+/*========== SCROLL BAR ==========*/
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
