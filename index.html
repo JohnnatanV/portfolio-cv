@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/f8c00bd5ae.js"
       crossorigin="anonymous"
     ></script>
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- Style -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!--  -->
@@ -154,7 +156,7 @@
           <!-- <img src="/assets/img/profile_1.jpg" alt="" class="about__img" /> -->
           <div class="about__data">
             <p class="about__description">
-              Self-taught developer, locking for my first experience as
+              Self-taught frontend developer, locking for my first experience as
               programmer, knowledge in Javascript, CSS and HTML, love to learn
               new things, always curious and always improving myself.
             </p>
@@ -274,11 +276,17 @@
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
-            <div class="qualification__button button--flex">
+            <div
+              class="qualification__button button--flex qualification-active"
+              data-target="#education"
+            >
               <i class="fas fa-graduation-cap qualification__icon"></i>
               Education
             </div>
-            <div class="qualification__button button--flex">
+            <div
+              class="qualification__button button--flex qualification-active"
+              data-target="#work"
+            >
               <i class="fas fa-briefcase qualification__icon"></i>
               Work
             </div>
@@ -290,7 +298,7 @@
             <div
               class="qualification__content qualification-active"
               data-content
-              id="eduaction"
+              id="education"
             >
               <!-- --- QUALIFICATION 1 --- -->
 
@@ -381,9 +389,213 @@
         </div>
       </section>
       <!-- --- SERVICES --- -->
+
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I Offer</span>
+
+        <div class="services__container container grid">
+          <!-- --- SERVICES 1 --- -->
+          <div class="services__content">
+            <div>
+              <i class="fas fa-pencil-alt services__icon"></i>
+              <h3 class="services__title">
+                Web <br />
+                Desing
+              </h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              View More
+              <i class="fas fa-caret-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Web <br />
+                  Desing
+                </h4>
+                <div class="services__modal-close">
+                  <i class="fas fa-times"></i>
+                </div>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="far fa-check-circle services__modal-icon"></i>
+                    <p>Web page development</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="far fa-check-circle services__modal-icon"></i>
+                    <p>Develop the user interface</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="far fa-check-circle services__modal-icon"></i>
+                    <p>Create Ux elements interactions</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- --- SERVICES 2 --- -->
+          <div class="services__content">
+            <div>
+              <i class="fas fa-code services__icon"></i>
+              <h3 class="services__title">
+                Frontend <br />
+                Developer
+              </h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              View More
+              <i class="fas fa-caret-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Frontend <br />
+                  Developer
+                </h4>
+                <div class="services__modal-close">
+                  <i class="fas fa-times"></i>
+                </div>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="far fa-check-circle services__modal-icon"></i>
+                    <p>Web page development</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="far fa-check-circle services__modal-icon"></i>
+                    <p>Develop the user interface</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="far fa-check-circle services__modal-icon"></i>
+                    <p>Create Ux elements interactions</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- --- PORTFOLIO --- -->
-      <!-- --- CONTACT --- -->
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- --- PORTFOLIO 1--- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio_1.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Landing page web</h3>
+                <p class="portfolio__description">
+                  Landing page whit mobile first workflow and BEM methodology,
+                  HTML and CSS.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://johnnatanv.github.io/clipboard-landing-page/"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo <i class="fas fa-caret-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- --- PORTFOLIO 2--- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio_2.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Fylo landing page web</h3>
+                <p class="portfolio__description">
+                  Fylo landing page offering a cloud service whit mobile first
+                  workflow and BEM methodology, HTML and CSS
+                </p>
+                <a
+                  target="_blank"
+                  href="https://fylo-landing-page-iota-nine.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo <i class="fas fa-caret-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- --- PORTFOLIO 3--- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portfolio_3.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Data Storage page</h3>
+                <p class="portfolio__description">
+                  Small web page whit a animation and responsive layout, HTML
+                  and CSS
+                </p>
+                <a
+                  target="_blank"
+                  href="https://fylo-data-storage-eight-rouge.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo <i class="fas fa-caret-right button__icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Arrows -->
+          <div class="swiper-button-next">
+            <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!--==================== PROJECT IN MIND ====================-->
+      <section class="project section"></section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section"></section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact"></section>
     </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

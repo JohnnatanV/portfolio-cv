@@ -50,9 +50,65 @@ skillsHeader.forEach((e) => {
 
 /*==================== QUALIFICATION TABS ====================*/
 
+const tabs = document.querySelectorAll("[data-target"),
+  tabContents = document.querySelectorAll("[data-content");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("qualification-active");
+    });
+
+    target.classList.add("qualification-active");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("qualification-active");
+    });
+
+    tab.classList.add("qualification-active");
+  });
+});
+
 /*==================== SERVICES MODAL ====================*/
 
+const modalViews = document.querySelectorAll(".services__modal"),
+  modalBtns = document.querySelectorAll(".services__button"),
+  modalCloses = document.querySelectorAll(".services__modal-close");
+
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add("active-modal");
+};
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove("active-modal");
+    });
+  });
+});
+
 /*==================== PORTFOLIO SWIPER  ====================*/
+
+let swiper = new Swiper(".portfolio__container", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 /*==================== TESTIMONIAL ====================*/
 
