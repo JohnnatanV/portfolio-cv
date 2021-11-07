@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- Style -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!--==================== MAIN JS ====================-->
+    <script defer src="/assets/js/main.js"></script>
     <!--  -->
+
     <title>Johnnatan Villaneda CV</title>
   </head>
   <body>
@@ -25,7 +28,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="fas fa-campground nav__icon"></i>Home
               </a>
             </li>
@@ -60,6 +63,11 @@
           </div>
         </div>
         <div class="nav__btns">
+          <!-- Theme change buttton -->
+          <div class="change-theme" id="theme-button">
+            <i class="far fa-moon"></i>
+          </div>
+
           <div class="nav__toggle" id="nav-toggle">
             <i class="far fa-lightbulb"></i>
           </div>
@@ -125,7 +133,7 @@
               </svg>
             </div>
             <div class="home__data">
-              <h1 class="home__title">Hola Soy Johnnatan</h1>
+              <h1 class="home__title">Hi I'm Johnnatan</h1>
               <h3 class="home__subtitle">Frontend developer</h3>
               <p class="home__description">
                 Selftaught programmer whit knowledge in javascript and design of
@@ -283,10 +291,7 @@
               <i class="fas fa-graduation-cap qualification__icon"></i>
               Education
             </div>
-            <div
-              class="qualification__button button--flex qualification-active"
-              data-target="#work"
-            >
+            <div class="qualification__button button--flex" data-target="#work">
               <i class="fas fa-briefcase qualification__icon"></i>
               Work
             </div>
@@ -612,7 +617,12 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form
+            action="mailto:joh.villaneda@outlook.com"
+            method="get"
+            enctype="text/plain"
+            class="contact__form grid"
+          >
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
@@ -637,9 +647,9 @@
                 ></textarea>
               </div>
               <div>
-                <a href="#" class="button button--flex">
+                <a type="submit" href="" class="button button--flex">
                   Send Message
-                  <i class="fas fa-paper-plane contact__icon"></i>
+                  <i class="fas fa-paper-plane button__icon"></i>
                 </a>
               </div>
             </div>
@@ -649,14 +659,57 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Johnnatan</h1>
+            <span class="footer__subtitle">Frontend Developer</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.facebook.com/johnnatanv/"
+              target="_blank"
+              class="footer__social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/johnnatanvilla/"
+              target="_blank"
+              class="footer__social"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://twitter.com/JohnnatanV"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!--==================== SCROLL TOP ====================-->
 
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="fas fa-angle-double-up scroll-up__icon"></i>
+    </a>
+
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--==================== MAIN JS ====================-->
-    <script src="/assets/js/main.js"></script>
   </body>
 </html>
